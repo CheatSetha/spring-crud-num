@@ -32,6 +32,7 @@ public class EduController {
         model.addAttribute("NEW_EDU",eduModel);
         return "/newedu";
     }
+
     @GetMapping("/editedu/{id}")
     public ModelAndView editEdu(@PathVariable("id") long eduId) {
         //System.out.println("edit user by id "+id);
